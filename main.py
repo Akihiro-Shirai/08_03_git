@@ -7,6 +7,12 @@ def Max_1(x, y, z):
     return m
 
 
+def max_2(x, y, z, f, g):
+    m = Max_1(x, y, z)
+    n = Min_1(m, f, g)
+    return n
+
+
 def Min_1(x, y, z):
     n = x
     if y < n:
