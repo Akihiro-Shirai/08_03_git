@@ -9,7 +9,7 @@ def Max_1(x, y, z):
 
 def max_2(x, y, z, f, g):
     m = Max_1(x, y, z)
-    n = Min_1(m, f, g)
+    n = Max_1(m, f, g)
     return n
 
 
@@ -19,6 +19,12 @@ def Min_1(x, y, z):
         n = y
     if z < n:
         n = z
+    return n
+
+
+def Min_2(x, y, z, f, g):
+    m = Min_1(x, y, z)
+    n = Min_1(m, f, g)
     return n
 
 
