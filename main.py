@@ -43,13 +43,15 @@ def divide(a, b, c, d, e):
 
 
 def main():
-    print("任意の数字を3つ入力してください。")
+    print("任意の数字を5つ入力してください。")
     x = int(input("1つ目の数字："))
     y = int(input("2つ目の数字："))
     z = int(input("3つ目の数字："))
+    f = int(input("4つ目の数字："))
+    g = int(input("5つ目の数字："))
 
-    print("最大値と最小値の積は ", multi(x, y, z), " です。")
-    print("最大値と最小値の商は ", divide(x, y, z), " です。")
+    print("最大値と最小値の積は ", multi(x, y, z, f, g), " です。")
+    print("最大値と最小値の商は ", divide(x, y, z, f, g), " です。")
 
 
 main()
