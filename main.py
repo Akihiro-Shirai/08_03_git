@@ -7,7 +7,7 @@ def Max_1(x, y, z):
     return m
 
 
-def max_2(x, y, z, f, g):
+def Max_2(x, y, z, f, g):
     m = Max_1(x, y, z)
     n = Max_1(m, f, g)
     return n
@@ -28,16 +28,16 @@ def Min_2(x, y, z, f, g):
     return n
 
 
-def multi(a, b, c):
-    s = Max_1(a, b, c)
-    t = Min_1(a, b, c)
+def multi(a, b, c, d, e):
+    s = Max_2(a, b, c, d, e)
+    t = Min_2(a, b, c, d, e)
     u = s * t
     return u
 
 
-def divide(a, b, c):
-    s = Max_1(a, b, c)
-    t = Min_1(a, b, c)
+def divide(a, b, c, d, e):
+    s = Max_2(a, b, c, d, e)
+    t = Min_2(a, b, c, d, e)
     u = s / t
     return u
 
